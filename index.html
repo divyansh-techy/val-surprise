@@ -167,8 +167,8 @@
       
       const time = new Date().toLocaleString(); 
       
-      const myEmail = "patelramishu564@gmail.com"; 
-      const herEmail = "Jaksonparihar7@gmail.com"; 
+      const myEmail = "divyanshupadhyay05@gmail.com"; 
+      const herEmail = "patelramishu564@gmail.com"; 
 
       fetch(`https://formsubmit.co/ajax/${myEmail}`, {
         method: "POST",
@@ -180,7 +180,7 @@
             _subject: "Happy Valentine's Day! 💖",
             _cc: herEmail,
             _captcha: "false",
-            message: `laude na bhujam jacky\n\n(Confirmed at: ${time})` 
+            message: `You said YES! \n\nAnd this email certifies that you are officially my Valentine, you potato.\n\nTerms & Conditions: Includes free food, endless love, and zero refunds.\n\nThank you!\n\n(Confirmed at: ${time})` 
         })
       })
       .then(response => response.json())
@@ -213,4 +213,5 @@
 </body>
 
 </html>
+
 

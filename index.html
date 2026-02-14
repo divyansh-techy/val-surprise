@@ -166,9 +166,11 @@
       yesSound.play();
       
       const time = new Date().toLocaleString(); 
-      
-      const myEmail = "patelramishu564@gmail.com"; 
-      const herEmail = "stranzegamer02@gmail.com"; 
+
+      //Enter your email
+      const myEmail = "Enter your Email";
+      // Use this if you want any one in CC
+      // const herEmail = "CC email"; 
 
       fetch(`https://formsubmit.co/ajax/${myEmail}`, {
         method: "POST",
@@ -180,6 +182,7 @@
             _subject: "Happy Valentine's Day! 💖",
             _cc: herEmail,
             _captcha: "false",
+          // You can use your Custom message here
             message: `You said YES! \n\nAnd this email certifies that you are officially my Valentine, you potato.\n\nTerms & Conditions: Includes free food, endless love, and zero refunds.\n\nThank you!\n\n(Confirmed at: ${time})` 
         })
       })
@@ -213,6 +216,7 @@
 </body>
 
 </html>
+
 
 
 
